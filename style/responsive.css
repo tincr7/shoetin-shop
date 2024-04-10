@@ -1,0 +1,174 @@
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .menu>li>a{
+        padding: 8px 14px;
+    }
+    .dichvu{
+        margin: 40px;
+    }
+    .footer .diachi img{
+        width: 125px;
+    }
+    .footer ul>li{
+        padding-right: 38px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .logo {
+        padding-top: 25px;
+        width: 100px;
+    }
+    .menu>li>a {
+        font-size: 14px;
+        padding: 8px 5px;
+    }
+    .search-input{
+        width: 240px;
+        height: 35px;
+    }
+    .search-icon{
+        height: 35px;
+    }
+    .slide-container{
+        height: 450px;
+    }
+    span.next {
+        right: 5px;
+    }
+    span.prev {
+        left: 5px;
+    }
+    span.next, span.prev {
+        top: 35%
+    }
+    .dichvu{
+        margin: 30px;
+    }
+    .icon{
+        font-size: 25px;
+    }
+    .footer .diachi img{
+        width: 80px;
+    }
+    .footer .diachi h5{
+        font-size: 15px;
+    }
+    .footer h4{
+        font-size: 17px;
+    }
+    .footer ul>li{
+        margin-bottom: 15px;
+        padding-right: 17px;
+    }
+    .footer .social img{
+        width: 230px;
+    }
+    .collapsible {
+        padding: 15px;
+        font-size: 15px;
+    }
+    .full-chat-block {
+        width: 320px;
+    }
+    .outer-container {
+        min-height: 400px;
+    }
+    .dichvu h5 {
+        font-size: 15px;
+    }
+    .dichvu h6 {
+        font-size: 10px;
+    }
+    .product-details .buy-button{
+       display: none;
+    }
+    .product-details h4{
+        font-size: 12px; 
+     }
+
+}
+
+@media screen and (max-width:767px){
+    .logo {
+        width: 100px;
+        padding-top: 17px;
+    }
+    .search-box{
+        display: none;
+    }
+    .menu {
+        display: none;
+        background: gainsboro;
+        float: right;
+        margin: 0;
+        width: 137%; 
+    }
+    .menu>li>a{
+        font-size: 15px;
+        padding: 21px 17px;
+    }
+    .dt {
+        font-size: 30px;
+        display: block;
+        padding: 40px 0px;
+    }
+    .slide-container{
+        height: 250px;
+    }
+    span.next {
+        right: 0px;
+    }
+    span.prev {
+        left: 0px;
+    }
+    span.next, span.prev {
+        top: 25%
+    }
+    .dichvu{
+        margin: 15px;
+    }
+    .dichvu h6{
+        display: none;
+    }
+    .dichvu h5{
+        font-size: 14px;
+        padding-top: 5px;
+    }
+    .buy-button{
+        display: none;
+    }
+    .swiper {
+        display: none;
+    }
+    .go-top-btn{
+        bottom: 70px;
+    }
+    .footer ul >li {
+        padding-right: 60px;
+    }
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+        border: 0px;
+        border-top: 3px solid white;
+        border-radius: 0px;
+    }
+    .outer-container {
+        min-height: 350px;
+    }
+    .product-info{
+        font-size: 10px;
+    }
+    .product-info h4{
+        font-size: 12px;
+    }
+}

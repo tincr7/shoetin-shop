@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    margin: 10px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+}.xam {
+    width: auto;
+    height: 130px;
+    background-image: url(/shoetin_img/nenxam.png);
+    background-repeat: repeat-x repeat-y;
+    position: relative;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    /* Màu nền của header */
+    z-index: 1000;
+    /* Độ ưu tiên để hiển thị phía trên */
+    /* Thêm các thuộc tính CSS khác tùy chỉnh cho header của bạn */
+}
+
+/* Điều chỉnh khoảng cách giữa header và nội dung trang */
+body {
+    padding-top: 120px;
+    position: relative;
+    /* Thay đổi giá trị này tùy thuộc vào chiều cao của header */
+}
+
+.menu {
+    margin: 40px 0px;
+    padding-left: 0px;
+    float: left;
+    display: flex;
+}
+.menu>li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: block;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+.menu>li:hover a {
+    color: black;
+    background: white;
+}
+
+.search-box {
+    position: relative;
+    margin: 40px 0px;
+}
+
+.search-input {
+    width: 260px;
+    height: 46px;
+    border: 2px solid #eee;
+    outline: none;
+    border-radius: 100px;
+    padding-left: 46px;
+    transition: all ease 300ms;
+}
+
+.search-icon {
+    position: absolute;
+    height: 46px;
+    width: 40px;
+    top: 0;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon i {
+    font-size: 20px;
+    color: black;
+}
+.dt{
+    display: none;
+}
+
+
+
+.cart-icon i {
+    font-size: 20px;
+    color: black;
+}
+
+.search-input:focus {
+    border-color: red;
+}
+
+.mota{
+    width: 100%;
+    background-color: #DBDBDB;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+}
+.mota h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.mota p{
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+#check{
+    display: none;
+}
+
+.content{
+    display: none;
+    transition: 0.5s linear;
+}
+
+label{
+    display: inline-block;
+    margin-top: 15px;
+    color:black;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#check:checked ~ .content{
+    display: block; 
+}
+
+#check:checked ~ label{
+    visibility: hidden;
+}
+
+#check:checked ~ label:after{
+    content:"Show Less";
+    display: block;
+    visibility: visible;
+}
+
+
+.product {
+    position: relative;
+}
+
+.product-details {
+    width: 100%;
+    background-color: #f2f2f2;
+    /* Màu nền cho khung thông tin */
+    padding: 10px;
+    margin-top: 10px;
+    /* Khoảng cách từ bảng giá đến nút Mua ngay */
+    border-radius: 10px;
+}
+
+.product-info .product-image {
+    transition: transform 0.3s ease;
+}
+
+.product-info:hover .product-image {
+    transform: translateY(-5px);
+    /* Dịch chuyển hình ảnh lên */
+}
+
+.product-info {
+    margin: 20px 0;
+}
+.product-details p{
+    color: red;
+    font-weight: bold;
+}
+
+.product-details{
+    text-align: center;
+}
+.csp {
+    background-color: none;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #DBDBDB;
+    color: black;
+    padding: 50px 0;
+}
+
+.footer img{
+    color:
+#1e73be;
+display:
+inline-block;
+
+line-height:
+25.6px;
+}
+
+.footer h5{
+    display: inline;
+}
+.footer h4 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul >li {
+    margin-bottom: 20px;
+    display: block;
+    float: left;
+    text-align: left;
+    padding-right: 65px;
+}
+
+.footer ul >li >a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer ul >li >a:hover {
+    font-weight: bold;
+}
+
+.ico1{
+    font-size: 38px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+    .ctsp {
+        width: 94%;
+    }
+
+    .ht {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .ctsp {
+        width: 95%;
+    }
+
+    .ht {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ctsp {
+        width: 92%;
+    }
+
+    .ht {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ctsp {
+        width: 93%;
+    }
+
+    .ht {
+        display: block;
+    }
+}

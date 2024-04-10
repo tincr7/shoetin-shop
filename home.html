@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeTin shop</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/thuvien.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class=" header-container xam">
+        <div class="container xam ">
+            <!--header-->
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-3">
+                    <img src="./shoetin_img/logo.png" alt="" class="logo">
+                </div>
+                <div class="col-lg-5 col-md-5 col-9 text-center ">
+                    <div class="dt">
+                        <i class="fa-solid fa-magnifying-glass" style="padding: 0px 30px;"></i>
+                        <i class="fa-solid fa-shopping-cart" style="padding: 0px 30px;"></i>
+                        <i class="toggle fa-solid fa-bars" style="padding-left: 30px;"></i>
+                    </div>
+                    <div>
+                        <ul class="menu">
+                            <li><a href="./html/converse.html">converse</a></li>
+                            <li><a href="./html/gucci.html">gucci</a></li>
+                            <li><a href="./html/lv.html">lv</a></li>
+                            <li><a href="./html/vans.html">vans</a></li>
+                            <li><a href="#">liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <div class="search-box">
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <input type="text" class="search-input" placeholder="Tìm kiếm" />
+                        <a href="#" class="cart-icon">
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-----Banner-->
+        <div class="slide-container" style="margin: 40px 0px;">
+            <div class="slides">
+
+                <a href="#"><img src="./shoetin_img/banner1.jpg" class="active"></a>
+                <a href="#"><img src="./shoetin_img/banner2.jpg"></a>
+                <a href="#"><img src="./shoetin_img/banner3.jpg"></a>
+                <a href="#"><img src="./shoetin_img/banner4.jpg"></a>
+                <a href="#"><img src="./shoetin_img/banner5.jpg"></a>
+
+            </div>
+            <div class="buttons">
+                <span class="next">&#10095;</span>
+                <span class="prev">&#10094;</span>
+            </div>
+
+            <div class="dotsContainer">
+                <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+                <div class="dot" attr='1' onclick="switchImage(this)"></div>
+                <div class="dot" attr='2' onclick="switchImage(this)"></div>
+                <div class="dot" attr='3' onclick="switchImage(this)"></div>
+                <div class="dot" attr='4' onclick="switchImage(this)"></div>
+            </div>
+        </div>
+        <!---topsp-->
+        <div class="row">
+            <div class="col-lg-2  col-md-2 col-5 dichvu align-items-center">
+                <i class="icon fa-solid fa-truck"></i>
+                <h5>Giao hàng miễn phí</h5>
+                <h6>Mua sắm trực tuyến là sự lựa chọn tuyệt vời</h6>
+            </div>
+            <div class="col-lg-2 col-md-2 col-5 dichvu align-items-center">
+                <i class="icon fa-solid fa-shield"></i>
+                <h5>Bảo hành cao cấp</h5>
+                <h6>Tối đa 2 năm với giá tốt nhất</h6>
+            </div>
+            <div class="col-lg-2 col-md-2 col-5 dichvu align-items-center">
+                <i class="icon fa-solid fa-rotate-left"></i>
+                <h5>Hoàn trả miễn phí</h5>
+                <h6>Tạo chính sách hoàn trả và hoàn tiền của riêng bạn</h6>
+            </div>
+            <div class="col-lg-2 col-md-2 col-5 dichvu align-items-center">
+                <i class="icon fa-solid fa-phone-volume"></i>
+                <h5>Hỗ trợ 24/7</h5>
+                <h6>Khách hàng có thể nhận được hỗ trợ mọi lúc</h6>
+            </div>
+        </div>
+
+        <div class="row topsp align-items-center">
+            <h3>Top sản phẩm bán chạy</h3>
+            <div class="col-lg-4 col-md-4 col-4 ">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/co1.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Converse Unisex Chuck 70 Plus</h4>
+                        <p>720.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-4">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/gu4.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Gucci Ace Embroidered</h4>
+                        <p>1.500.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-4">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/va4.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Vans Classic White Full</h4>
+                        <p>570.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------SP---------------->
+        <div class="row csp">
+            <h3>Giày Vans</h3>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/va5.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Vans Caro Slip on Bản Cao Cấp</h4>
+                        <p>820.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/va2.png" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Vans Mickey Minnie Mouse White Black</h4>
+                        <p>520.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/va3.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Vans Vault Classic Black </h4>
+                        <p>520.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/va4.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Vans Classic White Full</h4>
+                        <p>570.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center icon">
+                <a href="./html/vans.html"><i class="fa-solid fa-chevron-down" style="color: #000000;"></i></a>
+            </div>
+        </div>
+
+        <div class="row csp">
+            <h3>Giày Converse</h3>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/co4.jpeg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Converse Run Star Hike Hi Anderson Black</h4>
+                        <p>780.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/co1.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Converse Unisex Chuck 70 Plus</h4>
+                        <p>720.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/co2.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Converse Chuck Taylor All Star 1970s</h4>
+                        <p>550.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/co3.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Giày Converse Run Star Hike Low ‘White’</h4>
+                        <p>870.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center icon1">
+                <a href="./html/converse.html"><i class="fa-solid fa-chevron-down" style="color: #000000;"></i></a>
+            </div>
+        </div>
+
+        <div class="row csp">
+            <h3>Giày Gucci</h3>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/gu1.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Gucci Blade Distressed White</h4>
+                        <p>1.500.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/gu2.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Gucci Stripe Leather Sneaker</h4>
+                        <p>1.500.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/gu3.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Gucci JS Ace Leather ‘White’</h4>
+                        <p>1.500.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/gu4.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>Gucci Ace Embroidered White</h4>
+                        <p>1.500.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center icon1">
+                <a href="./html/gucci.html"><i class="fa-solid fa-chevron-down" style="color: #000000;"></i></a>
+            </div>
+        </div>
+
+        <div class="row csp">
+            <h3>Giày Louis Vuitton</h3>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/lv1.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4> LV Trainer Monogram Denim White Blue</h4>
+                        <p>3.600.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/lv2.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4> LV Trainer Sneaker Pink Chalk</h4>
+                        <p>2.200.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/lv3.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>LV Trainer Monogram Black</h4>
+                        <p>2.200.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="product-info">
+                    <a href="./html/ctsp.html"><img src="./shoetin_img/lv4.jpg" class="product-image" style="width: 100%;" alt=""></a>
+                    <div class="product-details">
+                        <h4>LV Trainer White Green Monogram Denim</h4>
+                        <p>900.000₫</p>
+                        <a href="#" class="buy-button">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center icon1">
+                <a href="./html/lv.html"><i class="fa-solid fa-chevron-down" style="color: #000000;"></i></a>
+            </div>
+        </div>
+
+        <!----------Đánh giá---------->
+        <div class=" danhgia swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Review Box 1 -->
+                <div class="swiper-slide">
+                    <div class="customer-review">
+                        <div class="avatar">
+                            <img src="./shoetin_img/ava4.png" alt="Avatar">
+                        </div>
+                        <div class="review-details">
+                            <h4 class="customer-name">Sangjunior</h4>
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="review-content">Trải nghiệm mua sắm trực tuyến trên trang web của cửa hàng này rất
+                                thuận tiện và dễ dàng. Giao diện sạch sẽ và tính năng tìm kiếm thông minh giúp tôi dễ
+                                dàng lựa chọn sản phẩm mình muốn mà không mất nhiều thời gian.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Box 2 -->
+                <div class="swiper-slide">
+                    <div class="customer-review">
+                        <div class="avatar">
+                            <img src="./shoetin_img/ava2.png" alt="Avatar">
+                        </div>
+                        <div class="review-details">
+                            <h4 class="customer-name">Adian</h4>
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="review-content">Tôi rất hài lòng với chất lượng của các sản phẩm mà cửa hàng này
+                                cung cấp. Chất liệu tốt và
+                                thiết kế đa dạng đã khiến tôi trở thành một khách hàng trung thành</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="customer-review">
+                        <div class="avatar">
+                            <img src="./shoetin_img/ava3.png" alt="Avatar">
+                        </div>
+                        <div class="review-details">
+                            <h4 class="customer-name">Smith</h4>
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="review-content">Tôi cảm thấy yên tâm về tính bảo mật trong quá trình thanh toán
+                                tại cửa hàng này. Hệ thống thanh toán an toàn và đáng tin cậy đã khiến tôi không cần
+                                phải lo lắng về việc bị hack thông tin cá nhân.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="customer-review">
+                        <div class="avatar">
+                            <img src="./shoetin_img/ava1.png" alt="Avatar">
+                        </div>
+                        <div class="review-details">
+                            <h4 class="customer-name">John Doe</h4>
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p class="review-content">Dịch vụ khách hàng tại cửa hàng này thật sự xuất sắc. Nhân viên
+                                luôn nhiệt tình và nhanh chóng giải quyết mọi vấn đề mà tôi gặp phải, từ việc tìm kiếm
+                                kích cỡ phù hợp đến việc đổi trả sản phẩm.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more review boxes as needed -->
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+    </div>
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa-solid fa-comments"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa-solid fa-paper-plane"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 diachi">
+                    <img src="./shoetin_img/logo.png" alt="">
+                    <h5>Shop Giày Shoetin</h5>
+                    <h4>Thông tin liên hệ</h4>
+                    <p>Địa chỉ: 2 Trường Sa, Bình Thạnh, TPHCM </p>
+                    <p>Email: shoetinshop@.com</p>
+                    <p>Điện thoại: 123-456-0121</p>
+                </div>
+                <div class="col-lg-4 col-md-4 chinhsach">
+                    <h4>Các chính sách của Shoetin</h4>
+                    <ul>
+                        <li><a href="#">Chính Sách bảo mật</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả hoàn tiền</a></li>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 social">
+                    <img src="./shoetin_img/icon-delivery-removebg-preview.png" style="padding-bottom:20px; " alt="">
+                    <h4>Theo dõi chúng tôi</h4>
+                    <ul>
+                        <li><a href="#"><i class="ico1 fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="ico1 fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="ico1 fa-brands fa-tiktok"></i></a></li>
+                        <li><a href="#"><i class="ico1 fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button class="go-top-btn">
+        <img src="./shoetin_img/arrow-up.png" alt="">
+    </button>
+
+
+    <script src="./js/chat.js"></script>
+    <script src="./js/responses.js"></script>
+    <script src="./js/slideshow.js"></script>
+    <script src="./js/backtotop.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
