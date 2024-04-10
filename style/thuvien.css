@@ -14,19 +14,13 @@ ul {
 
 li {
     float: left;
-}.xam {
-    width: auto;
-    height: 130px;
-    background-image: url(/shoetin_img/nenxam.png);
-    background-repeat: repeat-x repeat-y;
-    position: relative;
 }
 
 .header-container {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #DBDBDB;
     /* Màu nền của header */
     z-index: 1000;
     /* Độ ưu tiên để hiển thị phía trên */
