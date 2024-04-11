@@ -98,12 +98,15 @@
     }
     .menu {
         display: none;
+    }
+    .menu1 {
+        display: none;
         background: gainsboro;
         float: right;
         margin: 0;
         width: 137%; 
     }
-    .menu>li>a{
+    .menu1>li>a{
         font-size: 15px;
         padding: 21px 17px;
     }
